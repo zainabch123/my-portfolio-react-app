@@ -11,6 +11,7 @@ function App() {
         </nav>
         <section className="title-section">
           <div className="title">
+            <h1>Testing Auto Update</h1>
             <h1>Zainab Choudhry</h1>
             <p>Explore my latest projects and learn more about me.</p>
           </div>
