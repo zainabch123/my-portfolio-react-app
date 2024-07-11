@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 1fr 40px;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 40px 1fr;
+}
+
+.navigation-bar {
+    display: inline-block;
+    padding: 10px;
+    text-align: right;
+}
+
+.navigation-bar a {
+    padding: 8px;
+    text-decoration: none;
+}
+
+.title-section {
+    display: grid;
+    grid-template-columns: minmax(auto, 900px) minmax(auto, 500px);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.title {
+    text-align: left;
+    font-size: 4rem;
+    padding: 50px;
+}
+
+.title p {
+    font-size: 20px;
+}
+
+.title-img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    padding: 50px;
+}
+
+.about-section, .contact-section {
+  display: grid;
+  grid-template-columns: minmax(250px, 800px);
+  justify-content: center;  
+}
+
+.about-section, .projects-section, .contact-section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.about-section p, .projects-section p {
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.skills-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.skills-section li {
+    font-size: 1.2rem;
+}
+
+.projects-section h2, .projects-section p, .contact-section h2 {
+    text-align: center;
+}
+
+.project-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+@media (max-width: 900px ) {
+    .title-img {
+        display: none;
+    }
+}
