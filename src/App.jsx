@@ -3,6 +3,7 @@ import Contact from "./Contact";
 import Header from "./Header";
 import MyProjects from "./MyProjects";
 import Skills from "./Skills";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
