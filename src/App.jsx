@@ -21,7 +21,9 @@ function App() {
         <MyProjects />
         <Skills />
         <Contact />
-        <footer className="footer-section">Footer</footer>
+        <footer className="footer-section">
+          <p>&copy; Zainab Choudhry 2024. </p>
+        </footer>
       </main>
     </div>
   );

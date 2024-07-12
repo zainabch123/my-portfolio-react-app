@@ -16,9 +16,10 @@
 
 main {
   display: grid;
-  grid-template-rows: repeat(4, auto) 40px;
+  grid-template-rows: repeat(6, auto);
   overflow: scroll;
   scrollbar-gutter: auto;
+  overflow-x: hidden;
 }
 
 .header {
@@ -48,7 +49,7 @@ main {
   padding: 10px;
   margin: 5px;
   font-weight: 600;
-  transition: padding-top 0.5s;
+  transition: padding-top 0.2s;
 }
 
 .navigation-bar a:hover {
@@ -68,7 +69,9 @@ main {
 }
 
 .title-section p,
-.projects-section p {
+.projects-section p,
+.skills-section p,
+.contact-section p {
   font-size: 1.2rem;
   padding-bottom: 10px;
 }
@@ -90,7 +93,7 @@ main {
   grid-template-columns: minmax(auto, 900px) auto;
   justify-content: center;
   justify-items: center;
-  margin-top: 60px;
+  padding: 60px 0px 60px 0px;
 }
 
 .about-me-text {
@@ -98,13 +101,15 @@ main {
 }
 
 .about-me-text h2,
-.projects-section h2 {
+.projects-section h2,
+.skills-section h2,
+.contact-section h2 {
   font-size: 2.5rem;
   font-weight: 800;
 }
 
 .about-me-text p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding-top: 20px;
 }
 
@@ -118,22 +123,22 @@ main {
 }
 
 .projects-section {
-  justify-items: center;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding: 60px 0px 60px 0px;
 }
 
-.projects-section p {
+.projects-section p,
+.skills-section p,
+.contact-section p {
   padding-top: 10px;
 }
 
 .project-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 0fr));
   justify-items: center;
-  grid-auto-flow:row;
-  margin: 0px 150px 0px 150px
+  gap: 30px;
+  justify-content: center;
 }
 
 .project-container {
@@ -163,6 +168,72 @@ main {
 .project-text {
   padding: 20px;
   text-align: start;
+}
+
+.project-text p,
+.skill-card p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.skills-section {
+  text-align: center;
+  padding: 60px 0px 60px 0px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.skill-card {
+  height: auto;
+  width: 300px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.skill-card svg {
+  width: 60%;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 60px 0px 60px 0px;
+  background-color: rgb(245, 244, 244);
+}
+
+.contact-section form {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid grey;
+}
+
+#message-area {
+  height: 140px;
+}
+
+.footer-section {
+  padding: 20px;
+  background-color: rgb(245, 244, 244);
+  text-align: start;
+  color: rgb(110, 108, 108);
 }
 
 @font-face {
