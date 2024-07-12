@@ -8,14 +8,16 @@
 
 .container {
   height: 100vh;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
   justify-content: center;
 }
 
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-rows: repeat(6, auto);
   overflow: scroll;
   scrollbar-gutter: auto;
@@ -32,7 +34,7 @@ main {
 
 .navigation-bar {
   display: grid;
-  grid-template-columns: 200px 1fr repeat(4, auto);
+  grid-template-columns: 200px minmax(0px, 800px) repeat(4, auto);
   font-size: 0.9rem;
   align-items: center;
   padding: 5px;
@@ -61,6 +63,8 @@ main {
 }
 
 .title-section {
+  display: flex;
+  flex-direction: column;
   margin-top: 150px;
   margin-bottom: 150px;
 }
@@ -93,7 +97,7 @@ main {
 
 .about-section {
   display: grid;
-  grid-template-columns: minmax(auto, 900px) auto;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 0fr));
   justify-content: center;
   justify-items: center;
   padding: 60px 0px 60px 0px;
