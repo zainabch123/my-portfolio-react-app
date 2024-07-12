@@ -216,16 +216,17 @@ main {
 }
 
 .contact-section {
+  display: grid;
   text-align: center;
   padding: 60px 0px 60px 0px;
   background-color: rgb(245, 244, 244);
+  justify-items: center;
+  
 }
 
 .contact-section form {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 500px;
-  grid-template-rows: repeat(3, auto);
+  display: flex;
+  flex-direction: column;
   gap: 15px;
   margin-top: 30px;
 }
@@ -233,6 +234,7 @@ main {
 .contact-section input,
 .contact-section textarea {
   height: 40px;
+  width: 500px;
   border-radius: 5px;
   padding: 10px;
   font-size: 1rem;
