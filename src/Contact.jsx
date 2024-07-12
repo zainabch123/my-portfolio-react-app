@@ -6,12 +6,12 @@ export default function Contact() {
         Feel free to reach out if you have any questions or would like to
         discuss a project.
       </p>
-      <form>
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <textarea id="message-area" placeholder="Message"></textarea>
-        <input id="submit-button" type="submit" value="Submit" />
-      </form>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea id="message-area" placeholder="Message"></textarea>
+          <input id="submit-button" type="submit" value="Submit" />
+        </form>
     </section>
   );
 }
