@@ -96,15 +96,22 @@ main {
 }
 
 .about-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 0fr));
   justify-content: center;
   justify-items: center;
   padding: 60px 0px 60px 0px;
 }
 
+.about-elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
+  justify-content: center;
+  justify-items: center;
+}
+
 .about-me-text {
   padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-me-text h2,

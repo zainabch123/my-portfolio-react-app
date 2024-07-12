@@ -1,6 +1,7 @@
 export default function AboutMe() {
   return (
     <section className="about-section" id="about-section">
+      <div className="about-elements">
       <div className="about-me-text">
         <h2>About Me</h2>
         <p>
@@ -13,6 +14,7 @@ export default function AboutMe() {
         </p>
       </div>
       <div className="about-me-image">Image</div>
+      </div>
     </section>
   );
 }
