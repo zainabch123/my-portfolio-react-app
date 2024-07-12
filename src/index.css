@@ -35,7 +35,7 @@ main {
   display: flex;
   font-size: 0.9rem;
   align-items: center;
-  padding: 5px;
+  padding: 0px 10px 0px 10px;
   text-align: center;
   justify-content: center;
 }
