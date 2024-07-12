@@ -8,12 +8,22 @@ function App() {
   return (
     <div className="container">
       <nav className="navigation-bar">
-        <h2>Zainab Choudhry</h2>
+        <a href="#header" id="nav-name">
+          <h2>Zainab Choudhry</h2>
+        </a>
         <div></div>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Skills</a>
-        <a href="">Contact</a>
+        <a className="nav-links" href="#about-section">
+          About
+        </a>
+        <a className="nav-links" href="#projects-section">
+          Projects
+        </a>
+        <a className="nav-links" href="#skills-section">
+          Skills
+        </a>
+        <a className="nav-links" href="#contact-section">
+          Contact
+        </a>
       </nav>
       <main>
         <Header />

@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills-section">
       <h2>My Skills</h2>
       <p>Here are some of the skills I have developed.</p>
       <section className="skills-grid">
