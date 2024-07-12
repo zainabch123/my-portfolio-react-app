@@ -12,7 +12,6 @@ function App() {
         <a href="#header" id="nav-name">
           <h2>Zainab Choudhry</h2>
         </a>
-        <div></div>
         <a className="nav-links" href="#about-section">
           About
         </a>
